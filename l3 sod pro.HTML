@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> time table 
+
+            
+        </title><style>
+
+
+/* General page design */
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Main school heading */
+h1 {
+    color: white;
+    background: #1e3a8a;
+    padding: 20px;
+    border-radius: 12px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px #94a3b8;
+}
+
+/* Class heading */
+h2 {
+    color: #1e40af;
+    font-size: 27px;
+}
+
+/* Term and week */
+h3 {
+    color: #334155;
+    background: #dbeafe;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Timetable table */
+table {
+    width: 95%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 15px #cbd5e1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table cells */
+td {
+    border: 1px solid #cbd5e1;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+/* First row: days */
+tr:first-child {
+    background: #1e3a8a;
+    color: white;
+}
+
+tr:first-child td {
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background: #eff6ff;
+}
+
+/* Hover effect */
+td:hover {
+    background: #bfdbfe;
+    transition: 0.3s;
+}
+
+/* Break and lunch rows */
+tr:has(td[colspan="5"]) {
+    background: #fed7aa;
+    color: #9a3412;
+}
+
+tr:has(td[colspan="5"]) td {
+    color: #9a3412;
+    font-weight: bold;
+}
+
+/* Navigation links */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background: #1e3a8a;
+    color: white;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+</style>
+
+        
+
+    </head>
+    <body>
+        <h1> MUTOVU TIME TABLES</h1>
+        <b><h2> L3 SOFT WARE DEVELOPMENT </h2></b>
+        <h3>TERM: 1      WEEK:16      School year: 2026-2027</h3>
+
+        <table border ="6" WIDTH="50%" HEIGHT="40%">
+            <tr>
+                <td></td>
+                <td>MONDAY</td>
+                <td>TUESDAY</td>
+                <td>WEDNESDAY</td>
+                <td>THURSDAY</td>
+                <td>FRIDAY</td>
+            </tr>
+            <tr>
+                <td> SCHOOL ASSEMBLY<br>7:45-8:00</td>
+                <td colspan="5">SCHOOL ASSEMBLY</td>
+            </tr>
+            <tr>
+                <td>1 <br>8:00-8:45</td>
+                <td>javascript</td>
+                <td>version control</td>
+                <td>ui ux design</td>
+                <td> project</td>
+                <td>web dev</td>
+            </tr>
+            <tr>
+                <td>2 <br>8:45-9:30</td>
+                <td>javascript</td>
+                <td>project</td>
+                <td>version</td>
+                
+                <td>UI/UX DESIGN</td>
+                
+                <td>MAth</td>
+            </tr>
+            <tr>
+                <td>3 <br>9:30-10:15</td>
+                <td>MATH</td>
+                <td>KISW</td>
+                <td>ui ux design</td>
+                <td>FRENCH</td>
+                <td>PROJECT REQUIREMENT</td>
+            </tr>
+            <tr>
+                <td>BREAK <br>10:15-10:30</td>
+                <td colspan="5">BREAK</td>
+            </tr>
+            <tr>
+                <td>4 <br>10:30-11:15</td>
+                <td>french</td>
+                <td>version CONTROL</td>
+                <td>kisw</td>
+                <td>MATHEMATICS</td>
+                <td>MATH</td>
+            </tr>
+            <tr>
+                <td>5 <br>11:15-12:00</td>
+                <td>kisw</td>
+                <td>math</td>
+                <td>SHE</td>
+                <td>ENGLISH</td>
+                <td> PDF</td>
+            </tr>
+            <tr> 
+                <td>LUNCH <br>12:00-12:30</td>
+                <td colspan="5">LUNCH</td>
+            </tr>
+            <tr>
+                <td>6 <br>12:30-1:15</td>
+                <td> WEB SITE</td>
+                <td>ENGLISH</td>
+                <td>COMPUTER LITERACY</td>
+                <td>PHYSICS</td>
+                <td>PROJECT</td>
+            </tr>
+            <tr>
+                <td>7 <br>1:15-2:00</td>
+                <td>KINY</td>
+                <td>JAVA SCRIPT</td>
+                <td>MATHEMATICS</td>
+                <td>FRENCH</td>
+                <td>ENGRISH</td>
+            </tr>
+            <tr>
+                <td>8 <br>2:00-2:45</td>
+                <td>UX DESIGN </td>
+                <td>CITIZEN</td>
+                <td>JAVASCRIPT</td>
+                <td>GAME</td>
+                <td>BUSINESS</td>
+            </tr>
+            <tr>
+                <td>BREAK <br>2:45-3:00</td>
+                <td colspan="5">BREAK</td>
+            <tr>
+                <td>9 <br>2:45-3:30</td>
+                <td>CITIZEN</td>
+                <td>ENGLISH</td>
+                <td>GRAPHIC DESIGN</td>
+                <td>PHYSIC</td>
+                <td>SHE</td>
+            </tr>
+            <tr>
+                <td>10 <br>3:30-4:15</td>
+                <td>MATH</td>
+                <td>OCCUPATION</td>
+                <td>JAVASCRIPT</td>
+                <td>FRENCH</td>
+                <td>KINY</td>
+            </tr>
+            <tr>
+                <td>11 <br>4:15-5:00</td>
+                <td>ENGLISH</td>
+                <td>MATHEMATICS</td>
+                <td>BUSINESS</td>
+                <td>FRENCH</td>
+                <td>KINY</td>
+            </tr>
+        </table>
+        <a class="back button" href="choose level 3.html">BACK</a>
+    </body>
+    
+</html>
