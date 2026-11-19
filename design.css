@@ -1,0 +1,40 @@
+#body{
+color:red;
+text-align:left ;
+font-size:12px;
+}
+#gap{
+color:black ;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+h1{
+    color:red;
+text-align: center;
+}
+p{
+color:rgb(7, 10, 21) ;
+font-family: 'Times New Roman', Times, serif;
+}
+h3{
+color:brown;
+text-align: center;
+}
+h4{
+color:darkred;
+text-align: center;
+}
+body{
+background-color: chocolate;
+
+}
+h2{
+stop-color: rgb(223, 15, 15);
+text-align: center;
+}
+div{
+background-color: hsl(220, 64%, 57%);
+}
+div{
+border: 10px outset rgb(2, 60, 4);
+
+}
