@@ -1,0 +1,199 @@
+<html>/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    /* Books background overlay with a dark tint for readability */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
+                      url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Home Page Grid Layout */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
+    background: rgba(30, 41, 59, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.left-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Right Side Outputs / Navigation */
+.right-content {
+    flex: 1;
+    padding: 50px;
+    background: rgba(15, 23, 42, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #38bdf8;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #f8fafc;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Trade Links List on Right Side */
+.trade-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.trade-list li a {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-left: 4px solid #38bdf8;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.trade-list li a:hover {
+    background: rgba(56, 189, 248, 0.15);
+    transform: translateX(6px);
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+.trade-list li a strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: #f1f5f9;
+}
+
+.trade-list li a span {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* Modules Page Styles */
+.modules-container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(30, 41, 59, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.back-btn {
+    display: inline-block;
+    color: #38bdf8;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.trade-section {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.module-card {
+    background: rgba(15, 23, 42, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.module-card h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.module-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.note-link {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.note-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .right-content {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
