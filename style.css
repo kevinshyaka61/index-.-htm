@@ -1,40 +1,55 @@
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- body {
-    margin: 0;
+
+/* BODY BACKGROUND IMAGE */
+body {
     min-height: 100vh;
+    font-family: Arial, sans-serif;
 
-    background-image: url("MTV2.jpeg");
+    /* Background image */
+    background-image: url("./MTV2.jpeg");
 
+    /* Display background properly */
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    /* Fallback background color */
+    background-color: #163b61;
 }
+
+/* HEADER */
 header {
-    background-color: rgba(2, 50, 108, 0.95);
+    background-color: rgba(2, 50, 108, 0.88);
     color: white;
     text-align: center;
     padding: 25px;
     border-bottom: 5px solid rgb(23, 164, 224);
 }
+
 header h1 {
-    color: rgba(228, 221, 221, 0.886);
+    color: rgba(228, 221, 221, 0.95);
     font-size: 32px;
     letter-spacing: 3px;
 }
+
 header p {
     margin-top: 10px;
     color: white;
 }
+
+/* NAVIGATION */
 nav {
-    background-color: rgba(2, 50, 108, 0.95);
+    background-color: rgba(2, 50, 108, 0.88);
     border-bottom: 3px solid black;
 }
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -42,6 +57,7 @@ nav ul {
     list-style: none;
     flex-wrap: wrap;
 }
+
 nav ul li a {
     display: block;
     text-decoration: none;
@@ -52,23 +68,37 @@ nav ul li a {
     border-right: 1px solid #ee5555;
     transition: 0.3s;
 }
+
 nav ul li a:hover {
     background-color: black;
     color: rgb(23, 164, 224);
 }
+
+/* MAIN CONTENT */
+main {
+    min-height: 400px;
+    padding: 20px;
+}
+
 .welcome {
-    background: rgba(255, 255, 255, 0.20);
-    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
     padding: 40px;
     border-radius: 15px;
     margin: 30px;
-} 
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 main h2 {
     color: #b90000;
     margin-bottom: 20px;
     font-size: 30px;
     text-shadow: 1px 1px white;
 }
+
 main p {
     color: #111;
     margin: 12px;
@@ -76,25 +106,32 @@ main p {
     font-weight: bold;
     text-shadow: 1px 1px rgba(255,255,255,0.6);
 }
+
+/* FOOTER */
 footer {
-    background-color: rgba(2, 50, 108, 0.95);
+    background-color: rgba(2, 50, 108, 0.90);
     color: white;
     text-align: center;
     padding: 30px 15px;
     border-top: 5px solid rgb(23, 164, 224);
 }
+
 footer h3 {
     color: rgb(238, 238, 240);
     font-size: 24px;
     margin-bottom: 15px;
 }
+
 footer p {
     color: #ccc;
     margin: 12px;
 }
+
+/* SOCIAL ICONS */
 .social-icons {
     margin: 20px;
 }
+
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -110,28 +147,55 @@ footer p {
     font-size: 18px;
     transition: 0.3s;
 }
+
 .social-icons a:hover {
     background-color: red;
     transform: translateY(-5px);
 }
+
+/* COPYRIGHT */
 .copyright {
     border-top: 1px solid #444;
     padding-top: 15px;
     font-size: 13px;
 }
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+
+    body {
+        background-attachment: scroll;
+        background-position: center;
+    }
+
     nav ul {
         flex-direction: column;
     }
+
     nav ul li {
         width: 100%;
         text-align: center;
     }
+
     nav ul li a {
         border-bottom: 1px solid #555;
     }
+
     main {
         margin: 15px;
-        padding: 35px 15px;
+        padding: 15px;
+    }
+
+    .welcome {
+        margin: 10px;
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main h2 {
+        font-size: 24px;
     }
 }
